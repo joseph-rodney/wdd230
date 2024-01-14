@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset -->
+    <meta charset="UTF-8">
+
+    <!-- Meta viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Kaneene Joseph - WDD 230 - Web Frontend Development</title>
+
+     <!-- Meta description -->
+     <meta name="description" content="Explore WDD 230 - Web Frontend Development with Kaneene Joseph. This is a course assignment portal for enhancing web development skills. ">
+
+     <!-- Meta author -->
+     <meta name="author" content="Kaneene Joseph">
+
+      <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700">
+
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/Profile.jpg" alt="Profile.jpg" width="100" height="100">
+        <h1>Kaneene Joseph Rodney</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href=https://www.churchofjesuschrist.org/study/scriptures/nt/john/3?lang target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <!-- Learning Activities Card -->
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+                <!-- Add more activities as needed -->
+            </ul>
+        </section>
+    
+        <!-- Information Card -->
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: Placeholder</p>
+            <p>Number of visits: Placeholder</p>
+            <!-- Add more information placeholders as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+    <!-- First Paragraph -->
+    <p id="copyrightInfo"></p>
+
+    <!-- Second Paragraph -->
+    <p id="lastModified"></p>
+    </footer>
+
+<!-- JavaScript to Populate Footer Information -->
+<script>
+    // Copyright Information
+    const copyrightInfo = document.getElementById('copyrightInfo');
+    const currentYear = new Date().getFullYear();
+    copyrightInfo.innerHTML = `&copy; ${currentYear} Kaneene Joseph Rodney, Uganda`;
+
+    // Last Modified Information
+    const lastModified = document.getElementById('lastModified');
+    const lastModifiedDate = document.lastModified;
+    lastModified.innerHTML = `Last Modified: ${lastModifiedDate}`;
+</script>
+
+</body>
+</html>
